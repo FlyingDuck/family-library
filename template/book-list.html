@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FamilyLib-List</title>
+</head>
+<body>
+<h1 align="center">Family Library</h1>
+
+<div align="center">
+    <div align="center">
+        <input/>
+        <button>Search</button>
+    </div>
+    <table border="1" align="center">
+        <tr>
+            <th>NO.</th>
+            <th>Title</th>
+            <th>Sub Title</th>
+            <th>Author</th>
+            <th>Press</th>
+            <th>Pages</th>
+            <th>Description</th>
+            <th>Key Words</th>
+            <th>Create Time</th>
+        </tr>
+        {{range .books}}
+        <tr>
+            <td>{{.Id}}</td>
+            <td>{{.Title}}</td>
+            <td>{{.SubTitle}}</td>
+            <td>{{.Author}}</td>
+            <td>{{.Press}}</td>
+            <td>{{.Pages}}</td>
+            <td>{{.Desc}}</td>
+            <td>{{.KeyWords}}</td>
+            <td>{{.CreateTime}}</td>
+        </tr>
+        {{end}}
+
+    </table>
+</div>
+
+</body>
+</html>
